@@ -93,8 +93,6 @@ img {
         border: 2px solid #a1af7a;
         color: #A1AF7A;
     }
-
-
 }
 
 
@@ -110,10 +108,12 @@ img {
     color: #35353598;
     gap: 5px;
     margin: 10px;
+    line-height: 120%;
 }
 
 .title-item{
     padding-bottom: 10px;
+    line-height: normal;
 }
 
 
@@ -124,9 +124,6 @@ img {
      flex-direction: column;
      align-items: start;
      justify-content: center;
-
-
-   
  }
 
 
@@ -156,7 +153,7 @@ img {
 
     .passo-a-passo {
         font-size: 14px;
-        line-height: 120%;
+        line-height: normal;
         align-items: left;
        
 
