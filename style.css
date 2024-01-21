@@ -17,6 +17,7 @@ body {
   
   .container {
     width: 400px;
+    height: 800px;
     padding: 36px;
     text-align: center;
     display: flex;
