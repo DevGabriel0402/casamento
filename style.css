@@ -65,7 +65,6 @@ body {
 }
   
   .social-links {
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,9 +74,9 @@ body {
   .btn {
     width: 100%; /* Largura fixa para os botões */
     margin-bottom: 10px;
-    padding: 10px 40px;
+    padding: 20px 40px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
    border-radius: 50px;
    border: 2px solid transparent;
