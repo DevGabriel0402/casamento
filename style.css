@@ -44,7 +44,7 @@ body {
     height: 225px;
     border-radius: 50%;
     border: 2px solid #A1AF7A;
-    box-shadow: 0 0 24px 5px #A1AF7A;
+    box-shadow: 0 0 10px 1px #A1AF7A;
     margin-top: 20px;
     
   }
