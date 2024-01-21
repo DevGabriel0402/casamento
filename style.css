@@ -40,8 +40,8 @@ body {
   }
   
   img {
-    width: 256px;
-    height: 256px;
+    width: 225px;
+    height: 225px;
     border-radius: 50%;
     border: 2px solid #A1AF7A;
     box-shadow: 0 0 24px 5px #A1AF7A;
@@ -52,7 +52,7 @@ body {
   p{
     line-height: 100%;
     width: 100%;
-    margin-top: 36px;
+    margin-top: 20px;
     padding: 20px;
     text-align: center;
     
