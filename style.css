@@ -34,7 +34,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
 
   }
@@ -50,17 +50,18 @@ body {
   }
 
   p{
-    font-size: 16px;
     line-height: 100%;
     width: 100%;
     margin-top: 36px;
+    padding: 20px;
     text-align: center;
-    & b{
-        font-family: 'Cinzel';
-        font-weight: 500 !important;
-        font-size: 24px;
-    }
+    
   }
+  .title{
+    font-family: 'Cinzel';
+    font-weight: 500 !important;
+    font-size: 18px !important;
+}
   
   .social-links {
     margin-top: 20px;
@@ -70,31 +71,28 @@ body {
     overflow-x: hidden;
   }
   
-  a {
+  .btn {
     width: 100%; /* Largura fixa para os botões */
     margin-bottom: 10px;
     padding: 10px 40px;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
    border-radius: 50px;
+   border: 2px solid transparent;
+   background-color: #A1AF7A;
+   cursor: pointer;
+   transition: all 0.3s;
+   &:hover{
+    background-color: transparent;
+    border: 2px solid #a1af7a;
+    color: #A1AF7A;
+   }
 
 
   }
   
-  .site {
-    background-color: #A1AF7A;
-   
-  }
-  
-  .QRcode {
-    background-color: #A1AF7A;
-    cursor: pointer;
-  }
-  
-  .instagram {
-    background-color: #e4405f;
-  }
+ 
   
 
   .passo-a-passo{
