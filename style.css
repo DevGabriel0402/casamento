@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F4E4;
+    overflow-y: hidden;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    width: 400px;
+    padding: 36px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+  }
+
+  .info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+
+  }
+  
+  img {
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    border: 2px solid #A1AF7A;
+    box-shadow: 0 0 24px 5px #A1AF7A;
+    margin-top: 20px;
+    
+  }
+
+  p{
+    font-size: 16px;
+    line-height: 100%;
+    width: 100%;
+    margin-top: 36px;
+    text-align: center;
+    & b{
+        font-family: 'Cinzel';
+        font-weight: 500 !important;
+        font-size: 24px;
+    }
+  }
+  
+  .social-links {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  
+  a {
+    width: 100%; /* Largura fixa para os botões */
+    margin-bottom: 10px;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+   border-radius: 50px;
+
+
+  }
+  
+  .site {
+    background-color: #A1AF7A;
+   
+  }
+  
+  .QRcode {
+    background-color: #A1AF7A;
+    cursor: pointer;
+  }
+  
+  .instagram {
+    background-color: #e4405f;
+  }
+  
+
+  .passo-a-passo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #35353598;
+    gap: 5px;
+    margin: 10px;
+    & span{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    & b {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+
+  
