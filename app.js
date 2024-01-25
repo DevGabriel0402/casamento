@@ -5,7 +5,11 @@ function copiarTexto() {
   navigator.clipboard
     .writeText(texto)
     .then(() => {
-      alert("Texto copiado com sucesso!");
+      mostrarMensagem(
+        "Pix copiado com sucesso!",
+        "green",
+        3500
+      );
     })
     .catch((err) => {
       console.error(
@@ -13,4 +17,34 @@ function copiarTexto() {
         err
       );
     });
+}
+
+function mostrarMensagem(
+  texto,
+  cor = "green",
+  tempo = 3500
+) {
+  const containerMensagens =
+    document.getElementById(
+      "container-mensagens"
+    );
+  const id = Math.floor(
+    Date.now() * Math.random()
+  ).toString();
+  const msg = `<div id="msg-${id}" class="animated fadeInDown toast ${cor}">${texto}</div>`;
+
+  containerMensagens.innerHTML += msg;
+
+  setTimeout(() => {
+    const mensagemElement =
+      document.getElementById(`msg-${id}`);
+    mensagemElement.classList.remove(
+      "fadeInDown"
+    );
+    mensagemElement.classList.add("fadeOutUp");
+
+    setTimeout(() => {
+      mensagemElement.remove();
+    }, 800);
+  }, tempo);
 }

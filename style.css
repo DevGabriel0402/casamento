@@ -16,6 +16,31 @@ body {
     overflow-y: hidden;
 }
 
+.hidden {
+    display: none !important;
+}
+
+.container-mensagens {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: transparent;
+}
+
+.toast {
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.toast.green {
+    background-color: #A1AF7A;
+
+}
+
 .container {
     width: 400px;
 
@@ -37,13 +62,14 @@ body {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+
     & p {
         line-height: 100%;
         width: 100%;
         margin-top: 20px;
         padding: 20px;
         text-align: center;
-    
+
     }
 
 
@@ -111,20 +137,20 @@ img {
     line-height: 120%;
 }
 
-.title-item{
+.title-item {
     padding-bottom: 10px;
     line-height: normal;
 }
 
 
-.passo-a-passo  .item {
+.passo-a-passo .item {
     padding-left: 10px;
-     width: 100%;
-     display: flex;
-     flex-direction: column;
-     align-items: start;
-     justify-content: center;
- }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
 
 
 
@@ -155,18 +181,18 @@ img {
         font-size: 14px;
         line-height: normal;
         align-items: left;
-       
+
 
     }
 
-    .title-item{
+    .title-item {
         padding-bottom: 10px;
     }
 
-   
 
-    .passo-a-passo  .item {
-       padding-left: 10px;
+
+    .passo-a-passo .item {
+        padding-left: 10px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -174,19 +200,70 @@ img {
         justify-content: center;
 
 
-      
+
     }
 }
 
 @media (max-width: 320px) {
-    img{
+    img {
         width: 160px;
         height: 160px;
     }
-    p, .btn, .passo-a-passo {
+
+    p,
+    .btn,
+    .passo-a-passo {
         font-size: 12px;
 
     }
 
-  
+
+}
+
+
+/* FadeInDown */
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+
+
+    }
+}
+
+.fadeInDown {
+    animation: fadeInDown 0.5s ease-in;
+}
+
+
+/* FadeInUp */
+
+
+
+@keyframes fadeOutUp {
+    from {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(-50px);
+
+
+    }
+}
+
+.fadeOutUp {
+animation: fadeOutUp 1s ease;
 }
